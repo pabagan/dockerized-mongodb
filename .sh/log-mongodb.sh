@@ -1,2 +1,2 @@
-APP_NAME=mongodb
-docker exec -i -t $APP_NAME-mongodb bash
+CONTAINER_NAME=recursos-mongodb
+docker exec -i -t $CONTAINER_NAME bash

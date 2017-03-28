@@ -8,13 +8,13 @@ services:
       - mongodb-data
     ports:
       - "27017:27017"
-    container_name: "mongodb"
+    container_name: ${CONTAINER_NAME}
     env_file: .env
     
   # mongodb data
   mongodb-data:
     image: mongo
-    container_name: "mongodb-data"
+    container_name: ${CONTAINER_NAME}-data
     volumes:
       - ${MONGODB_PERSISTENT}:/data/db
     command: "true"

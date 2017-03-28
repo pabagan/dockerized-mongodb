@@ -9,7 +9,7 @@ MongoDB v3.4.0 with Docker + Docker Compose with persistent data at host.
 Rename `.env-demo` to `.env` to set container environment variables.
 
 ```bash
-APP_NAME=mongodb
+CONTAINER_NAME=recursos-mongodb
 
 MONGODB_USER: "user"
 MONGODB_DATABASE: "dbname"

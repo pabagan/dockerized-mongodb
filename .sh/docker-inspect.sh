@@ -1,3 +1,6 @@
-# Show docker container IPs
+# Update this with your app settings
+CONTAINER_NAME=recursos-mongodb
+
+docker inspect $CONTAINER_NAME
 echo "mongodb: "
-docker inspect mongodb
+docker inspect $CONTAINER_NAME | grep IPAddress
